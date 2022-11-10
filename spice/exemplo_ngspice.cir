@@ -1,0 +1,11 @@
+exemplo resistores s3e
+V1 1 0 sin(0 1 1e3)
+R1 1 2 1k
+R2 2 3 1k
+R3 2 0 1k
+R4 3 0 1k
+
+.control
+tran 50u 5m
+plot v(3) v(1)
+.endc
